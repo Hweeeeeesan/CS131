@@ -1,0 +1,14 @@
+    1  passwd
+    2  wget -O out.pdf https://tinyurl.com/yy94jltt
+    3  pwd
+    4  cd ~
+    5  ls -latr ; mkdir cs131 ; cd cs131
+    6  git init
+    7  git remote add origin git@github.com:Hweeeeeesan/CS131.git
+    8  git config --global user.email hieusondang@gmail.com
+    9  git config --global user.name Hweeeeeesan
+   10  mkdir WS1 (makes worksheet 1 directory)
+   11  mkdir WS1
+   12  cd WS1
+   13  git add .
+   14  history > cmds.log
