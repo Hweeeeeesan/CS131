@@ -12,3 +12,41 @@
    12  cd WS1
    13  git add .
    14  history > cmds.log
+   15  ls -latr
+   16  git add cmds.log 
+   17  git commit -m "First commit" -a 
+   18  git branch
+   19  git push -u origin main 
+   20  git branch -M main
+   21  git push -u origin main
+   22  ls -la ~/.ssh
+   23  git pull --rebase origin main
+   24  cd~
+   25  cd ~
+   26  ls
+   27  git config
+   28  git config --global user.email "hieusondang@gmail.com"
+   29  git config --global user.name "Hweeeeeesan"
+   30  git pull --rebase origin main
+   31  cd cs131
+   32  ls
+   33  cd WS1
+   34  git pull --rebase origin main
+   35  cd ~
+   36  cd ~/cs131
+   37  git remote set-url origin https://github.com/Hweeeeeesan/CS131.git
+   38  git remote -v
+   39  git push -u origin main
+   40  cd ~/cs131
+   41  git remote set-url origin https://github.com/Hweeeeeesan/CS131.git
+   42  git remote -v
+   43  git push -u origin main
+   44  cd ~/cs131
+   45  git remote set-url origin https://github.com/Hweeeeeesan/CS131.git
+   46  git remote -v
+   47  git push -u origin main
+   48  cd ~/cs131
+   49  git remote set-url origin https://github.com/Hweeeeeesan/CS131.git
+   50  git push -u origin main
+   51  cd ~/cs131/WS1
+   52  history > cmds.log
