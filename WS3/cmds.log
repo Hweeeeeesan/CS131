@@ -1,0 +1,377 @@
+    1  passwd
+    2  wget -O out.pdf https://tinyurl.com/yy94jltt
+    3  pwd
+    4  cd ~
+    5  ls -latr ; mkdir cs131 ; cd cs131
+    6  git init
+    7  git remote add origin git@github.com:Hweeeeeesan/CS131.git
+    8  git config --global user.email hieusondang@gmail.com
+    9  git config --global user.name Hweeeeeesan
+   10  mkdir WS1 (makes worksheet 1 directory)
+   11  mkdir WS1
+   12  cd WS1
+   13  git add .
+   14  history > cmds.log
+   15  ls -latr
+   16  git add cmds.log 
+   17  git commit -m "First commit" -a 
+   18  git branch
+   19  git push -u origin main 
+   20  git branch -M main
+   21  git push -u origin main
+   22  ls -la ~/.ssh
+   23  git pull --rebase origin main
+   24  cd~
+   25  cd ~
+   26  ls
+   27  git config
+   28  git config --global user.email "hieusondang@gmail.com"
+   29  git config --global user.name "Hweeeeeesan"
+   30  git pull --rebase origin main
+   31  cd cs131
+   32  ls
+   33  cd WS1
+   34  git pull --rebase origin main
+   35  cd ~
+   36  cd ~/cs131
+   37  git remote set-url origin https://github.com/Hweeeeeesan/CS131.git
+   38  git remote -v
+   39  git push -u origin main
+   40  cd ~/cs131
+   41  git remote set-url origin https://github.com/Hweeeeeesan/CS131.git
+   42  git remote -v
+   43  git push -u origin main
+   44  cd ~/cs131
+   45  git remote set-url origin https://github.com/Hweeeeeesan/CS131.git
+   46  git remote -v
+   47  git push -u origin main
+   48  cd ~/cs131
+   49  git remote set-url origin https://github.com/Hweeeeeesan/CS131.git
+   50  git push -u origin main
+   51  cd ~/cs131/WS1
+   52  history > cmds.log
+   53  cd ..
+   54  git add WS1/cmds.log
+   55  git commit -m "Update command log"
+   56  git push
+   57  git clone https://github.com/Hweeeeeesan/CS131.git cs131_DangHieuson
+   58  cd ~
+   59  mkdir clone_test
+   60  cd clone_test
+   61  git clone https://github.com/Hweeeeeesan/CS131.git cs131_Dang_Hieuson
+   62  git status
+   63  ls -la WS1
+   64  cat WS1/cmds.log
+   65  cd ~/clone_test/cs131_Dang_Hieuson
+   66  git status
+   67  ls -la WS1
+   68  cat WS1/cmds.log
+   69  pwd
+   70  ls -l a1.txt
+   71  less a1.txt
+   72  ls
+   73  cd cs131
+   74  mkdir A1
+   75  cd A1
+   76  pwd
+   77  echo $HOME
+   78  whoami
+   79  groups
+   80  id
+   81  less ai.txt
+   82  less a1.txt
+   83  cd ~
+   84  less a1.txt
+   85  ls -ld .
+   86  ls -ld ~
+   87  getent group /mnt/scratch/CS131_billa/FA26/DangHieuson
+   88  getent group billa
+   89  grep billa /etc/group
+   90  cd ~/cs131/A1
+   91  ,kdir temp
+   92  mkdir temp
+   93  ls -ld temp
+   94  chmod u-x temp
+   95  ls -ld temp
+   96  cd temp
+   97  ls temp
+   98  ls -l temp
+   99  touch temp/test.txt
+  100  cd ~/cs131A1
+  101  cd ~/cs131/A1
+  102  mkdir temp2
+  103  mv temp2 temp3
+  104  ls -ld temp3
+  105  cp temp3 temp4
+  106  cp -r temp3 temp4
+  107  ld -ld temp3 temp4
+  108  ls -ld temp3 temp4
+  109  cd /proc
+  110  ls
+  111  ls | grep cpu
+  112  head /proc/meminfo
+  113  head /proc/cpuinfo
+  114  grep "^processor" /proc/cpuinfo
+  115  grep "^processor" /proc/cpuinfo | wc -l
+  116  uname -m
+  117  grp "cpu MHz" /proc/cpuinfo
+  118  grep "cpu MHz" /proc/cpuinfo
+  119  grep "cpu MHz" /proc/cpuinfo | head -1
+  120  lscpu | grep "CPU MHz"
+  121  lscpu | grep "Model name"
+  122  uname -m
+  123  lscpu | grep -i "max"
+  124  lscpu
+  125  grep -i "clock" /proc/cpuinfo
+  126  cd ~/cs131/A1
+  127  ln -s /mnt/scratch/CS131_billa/billandreopoulos/CS131_wba/DATA/downloaded_tweets_extend_nolf.ASCII.CLEAN.tsv .
+  128  ln -s /mnt/scratch/CS131_billa/billandreopoulos/CS131_wba/DATA/downloaded_tweets_extend_original_ids_nolf.ASCII.CLEAN.tsv .
+  129  ls -lh
+  130  du -h downloaded_tweets_extend_nolf.ASCII.CLEAN.tsv
+  131  du -h downloaded_tweets_extend_original_ids_nolf.ASCII.CLEAN.tsv
+  132  ls -lhL downloaded_tweets_extend_nolf.ASCII.CLEAN.tsv
+  133  ls -lhL downloaded_tweets_extend_original_ids_nolf.ASCII.CLEAN.tsv
+  134  wc -l downloaded_tweets_extend_nolf.ASCII.CLEAN.tsv
+  135  wc -l downloaded_tweets_extend_original_ids_nolf.ASCII.CLEAN.tsv
+  136  head -1 downloaded_tweets_extend_nolf.ASCII.CLEAN.tsv
+  137  cut -f4 downloaded_tweets_extend_nolf.ASCII.CLEAN.tsv
+  138  cut -f4 downloaded_tweets_extend_nolf.ASCII.CLEAN.tsv | grep -i great
+  139  cut -f4 downloaded_tweets_extend_nolf.ASCII.CLEAN.tsv | grep -i great | wc -l
+  140  file downloaded_tweets_extend_nolf.ASCII.CLEAN.tsv
+  141  file downloaded_tweets_extend_original_ids_nolf.ASCII.CLEAN.tsv
+  142  file -L downloaded_tweets_extend_nolf.ASCII.CLEAN.tsv
+  143  file -L downloaded_tweets_extend_original_ids_nolf.ASCII.CLEAN.tsv
+  144  head -1 downloaded_tweets_extend_nolf.ASCII.CLEAN.tsv
+  145  head -1 downloaded_tweets_extend_original_ids_nolf.ASCII.CLEAN.tsv
+  146  cut -f2 downloaded_tweets_extend_nolf.ASCII.CLEAN.tsv | sort | uniq | wc -l
+  147  cut -f2 downloaded_tweets_extend_original_ids_nolf.ASCII.CLEAN.tsv | sort | uniq | wc -l
+  148  cut -f1 downloaded_tweets_extend_nolf.ASCII.CLEAN.tsv | sort | uniq | wc -l
+  149  cut -f1 downloaded_tweets_extend_original_ids_nolf.ASCII.CLEAN.tsv | sort | uniq | wc -l
+  150  cut -f4 downloaded_tweets_extend_nolf.ASCII.CLEAN.tsv | sort | uniq | wc -l
+  151  cut -f4 downloaded_tweets_extend_original_ids_nolf.ASCII.CLEAN.tsv | sort | uniq | wc -l
+  152  cut -f4 downloaded_tweets_extend_nolf.ASCII.CLEAN.tsv | grep -i great | wc -l
+  153  cut -f4 downloaded_tweets_extend_original_ids_nolf.ASCII.CLEAN.tsv | grep -i great | wc -l
+  154  cp ~/a1.txt .
+  155  ls -lh
+  156  cut -f4 downloaded_tweets_extend_nolf.ASCII.CLEAN.tsv | grep -i great | wc -l
+  157  cut -f4 downloaded_tweets_extend_original_ids_nolf.ASCII.CLEAN.tsv | grep -i great | wc -l
+  158  cp a1.txt a1.new.txt
+  159  sed -i "s/^M//g" a1.new.txt
+  160  sed -i "s/^.*^G//g" a1.new.txt
+  161  sed -i -e 's/\x1b\[[0-9;]*m//g' a1.new.txt
+  162  ls -lh a1.new.txt
+  163  less a1.new.txt
+  164  git status
+  165  head -30 a1.new.txt
+  166  q
+  167  head -30 a1.new.txt
+  168  q
+  169  vi a1.txt
+  170  wc -l a1.txt
+  171  head -20 a1.txt
+  172  OB
+  173  wc -l a1.txt
+  174  head -20 a1.txt
+  175  whoami
+  176  groups
+  177  id
+  178  ls -ld ~
+  179  getent group billa
+  180  head /proc/meminfo
+  181  grep -c '^processor' /proc/cpuinfo
+  182  uname -m
+  183  grep -m1 'cpu MHz' /proc/cpuinfo
+  184  du -hL downloaded_tweets_extend_nolf.ASCII.CLEAN.tsv
+  185  du -hL downloaded_tweets_extend_original_ids_nolf.ASCII.CLEAN.tsv
+  186  wc -l downloaded_tweets_extend_nolf.ASCII.CLEAN.tsv
+  187  wc -l downloaded_tweets_extend_original_ids_nolf.ASCII.CLEAN.tsv
+  188  grep -c '^processor' /proc/cpuinfo
+  189  uname -m
+  190  grep -m1 '^cpu' /proc/cpuinfo
+  191  grep -m1 -i 'clocl' /proc/cpuinfo
+  192  grep -m1 -i 'clock' /proc/cpuinfo
+  193  stat -Lc '%s' downloaded_tweets_extend_nolf.ASCII.CLEAN.tsv
+  194  stat -Lc '%s' downloaded_tweets_extend_original_ids_nolf.ASCII.CLEAN.tsv
+  195  pwd
+  196  ls
+  197  cd cs131
+  198  ls
+  199  cd A1
+  200  ls
+  201  cp a1.txt a1.new.txt
+  202  sed -i "s/^M//g" a1.new.txt
+  203  sed -i "s/^.*^G//g" a1.new.txt
+  204  sed -i -e 's/\x1b\[[0-9;]*m//g' a1.new.txt
+  205  less a1.new.txt
+  206  cat -v a1.new.txt | head -20
+  207  cp a1.new.txt a1.clean.txt
+  208  sed -i 's/\r//g' a1.clean.txt
+  209  sed -i $'s/\x1b\\[[0-9;?]*[ -/]*[@-~]//g' a1.clean.txt
+  210  cat -v a1.clean.txt | head -20
+  211  ps
+  212  whoami
+  213  groups
+  214  id
+  215  cript a1_fix.txt
+  216  script a1_fix.txt
+  217  cat a1_fix.txt
+  218  cat -v a1_fix.txt
+  219  grep -m1 '^cpu' /proc/cpuinfo
+  220  grep -m1 -i 'clock' /proc/cpuinfo
+  221  lscpu | grep -Ei 'model name|cpu mhz|max mhz'
+  222  script a1_fix2.txt
+  223  cat a1_fix.txt >> a1.txt
+  224  cat a1_fix2.txt >> a1.txt
+  225  tail -100 a1.txt
+  226  less a1.txt
+  227  cp a1.txt a1.backup.txt
+  228  sed -i 's/\r//g' a1.clean.txt
+  229  sed -i -E 's/\x1B\[[0-9;?]*[ -\/]*[@-~]//g' a1.clean.txt
+  230  head -40 a1.clean.txt
+  231  q
+  232  tail -80 a1.clean.txt
+  233  cp a1.txt a1.new.txt q
+  234  head -40 a1.clean.txt | cat -v
+  235  cp a1.clean.txt a1.clean2.txt
+  236  sed -i 's/\r//g' a1.clean2.txt
+  237  sed -i -E 's/\x1B\[[0-9;?]*[ -\/]*[@-~]//g' a1.clean2.txt
+  238  head -40 a1.clean2.txt | cat -v
+  239  cp a1.clean2.txt a1.finalclean.txt
+  240  tr -cd '\11\12\15\40-\176' < a1.finalclean.txt > a1.tmp.txt
+  241  mv a1.tmp.txt a1.finalclean.txt
+  242  sed -i 's/\^\[\[[^[:space:]]*//g' a1.finalclean.txt
+  243  head -40 a1.finalclean.txt
+  244  mv a1.tmp.txt a1.finalcleaq
+  245  cp a1.txt a1.backup.txt
+  246  sed 's/\r//g' a1.txt | perl -pe 's/\e\[[0-?]*[ -\/]*[@-~]//g; s/\e[=>]//g' | col -b > a1.cleaned.txt
+  247  sed -i '/^~$/d' a1.cleaned.txt
+  248  sed -i '/(END)/d' a1.cleaned.txt
+  249  sed -i '/\.\.\.skipping\.\.\./d' a1.cleaned.txt
+  250  head -40 a1.cleaned.txt
+  251  sed -i '/(END)/d' a1.cleaned.q
+  252  sed -i '/ESC\[1m~ESC\[0m/d' a1.cleaned.txt
+  253  head -50 a1.cleaned.txt
+  254  q
+  255  head -50 a1.cleaned.txt
+  256  nano a1.cleaned.txt
+  257  head -60 a1.txt
+  258  less a1.txt
+  259  exit
+  260  cd ~/cs131/A1
+  261  nano a1.txt
+  262  script q13c_fix.txt
+  263  exit
+  264  pwd
+  265  script a1.txt
+  266  less a1.txt
+  267  pwd
+  268  more a1.txt
+  269  wc -l a1.txt
+  270  head -20 a1.txt
+  271  q
+  272  command head -20 a1.txt
+  273  /bin/head -20 a1.txt
+  274  q
+  275  pwd
+  276  find ~ -name "a1.txt" 2>/dev/null
+  277  ls -lh ~/cs131/A1/a1.txt
+  278  wc -l ~/cs131/A1/a1.txt
+  279  ead -20 ~/cs131/A1/a1.txt
+  280  head -20 ~/cs131/A1/a1.txt
+  281  nano ~/cs131/A1/a1.txt
+  282  cd ~
+  283  head -20 ~/cs131/A1/a1.txt
+  284  cd ~/cs131/A1
+  285  head -60 ~/cs131/A1/a1.txt
+  286  git status
+  287  git add a1.txt
+  288  git commit -m "Complete A1"
+  289  git push
+  290  git status
+  291  git push
+  292  git status
+  293  cd ~/cs131
+  294  mkdir -p WS@
+  295  rmdir WS@
+  296  mkdir WS2
+  297  cd WS2
+  298  ln -s /mnt/scratch/CS131_billa/billandreopoulos/CS131_wba/DATA/downloaded_tweets_extend_nolf.ASCII.CLEAN.tsv .
+  299  ln -s /mnt/scratch/CS131_billa/billandreopoulos/CS131_wba/DATA/downloaded_tweets_extend_original_ids_nolf.ASCII.CLEAN.tsv .
+  300  ls -l
+  301  grep "replied_to" downloaded_tweets_extend_nolf.ASCII.CLEAN.tsv
+  302  grep "replied_to" downloaded_tweets_extend_original_ids_nolf.ASCII.CLEAN.tsv
+  303  grep "retweeted" downloaded_tweets_extend_nolf.ASCII.CLEAN.tsv
+  304  grep "retweeted" downloaded_tweets_extend_original_ids_nolf.ASCII.CLEAN.tsv
+  305  grep "replied_to" downloaded_tweets_extend_nolf.ASCII.CLEAN.tsv | wc
+  306  grep "replied_to" downloaded_tweets_extend_original_ids_nolf.ASCII.CLEAN.tsv | wc
+  307  grep "retweeted" downloaded_tweets_extend_nolf.ASCII.CLEAN.tsv | wc
+  308  grep "retweeted" downloaded_tweets_extend_original_ids_nolf.ASCII.CLEAN.tsv | wc
+  309  grep "replied_to" downloaded_tweets_extend_nolf.ASCII.CLEAN.tsv | wc > counts.txt
+  310  grep "replied_to" downloaded_tweets_extend_original_ids_nolf.ASCII.CLEAN.tsv | wc >> counts.txt
+  311  grep "retweeted" downloaded_tweets_extend_nolf.ASCII.CLEAN.tsv | wc >> counts.txt
+  312  grep "retweeted" downloaded_tweets_extend_original_ids_nolf.ASCII.CLEAN.tsv | wc >> counts.txt
+  313  nano counts.txt
+  314  grep "replied_to" downloaded_tweets_extend_nolf.ASCII.CLEAN.tsv | wc
+  315  grep "replied_to" downloaded_tweets_extend_original_ids_nolf.ASCII.CLEAN.tsv | wc
+  316  grep "retweeted" downloaded_tweets_extend_nolf.ASCII.CLEAN.tsv | wc
+  317  grep "retweeted" downloaded_tweets_extend_original_ids_nolf.ASCII.CLEAN.tsv | wc
+  318  nano counts.txt
+  319  history > cmds.log
+  320  cat counts.txt
+  321  tail -20 cmds.log
+  322  less cmds.log
+  323  nano counts.txt
+  324  cd ~/131/WS2
+  325  cd ~/cs131/WS2
+  326  git status
+  327  nano counts.txt
+  328  git status
+  329  git add counts.txt cmds.log
+  330  git status
+  331  git commit -m "Complete WS2"
+  332  git push
+  333  nano ~/.bashrc
+  334  source ~/.bashrc
+  335  l
+  336  w
+  337  ls downloaded_tweets*.tsv
+  338  ls cs131
+  339  ls WS2
+  340  cd WS2
+  341  ls WS2
+  342  ls
+  343  ls cs131
+  344  cd cs131
+  345  ls
+  346  ls WS2
+  347  cd WS2
+  348  cd ~/cs131
+  349  mkdir -p WS3
+  350  ls
+  351  ls WS1
+  352  ls A1
+  353  head -1 ../WS2/downloaded_tweets_extend_nolf.ASCII.CLEAN.tsv
+  354  ls
+  355  ls WS3
+  356  pwd
+  357  cd WS3
+  358  pwd
+  359  head -1 ../WS2/downloaded_tweets_extend_nolf.ASCII.CLEAN.tsv
+  360  cut -f6 ../WS2/downloaded_tweets_extend_nolf.ASCII.CLEAN.tsv | head -5
+  361  cut -f4 ../WS2/downloaded_tweets_*.tsv | sort | uniq -c | sort -rn | head -30
+  362  grep 'type=retweeted' ../WS2/downloaded_tweets_*.tsv | cut -f4 | sort | uniq -c | sort -rn | head -30
+  363  grep 'type=replied_to' ../WS2/downloaded_tweets_*.tsv | cut -f4 | sort | uniq -c | sort -rn | head -30
+  364  grep 'type=quoted' ../WS2/downloaded_tweets_*.tsv | cut -f4 | sort | uniq -c | sort -rn | head -30
+  365  cat ws3.txt | tail -50
+  366  exit
+  367  pwd
+  368  tmux display-message -p '#W'
+  369  script ws3.txt
+  370  history > cmds.log
+  371  l
+  372  w
+  373  cut -f4 ../WS2/downloaded_tweets_*.tsv | sort | uniq -c | sort -rn | head -30
+  374  grep 'type=retweeted' ../WS2/downloaded_tweets_*.tsv | cut -f4 | sort | uniq -c | sort -rn | head -30
+  375  grep 'type=replied_to' ../WS2/downloaded_tweets_*.tsv | cut -f4 | sort | uniq -c | sort -rn | head -30
+  376  grep 'type=quoted' ../WS2/downloaded_tweets_*.tsv | cut -f4 | sort | uniq -c | sort -rn | head -30
+  377  history > cmds.log
