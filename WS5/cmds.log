@@ -666,3 +666,12 @@
   666  ls
   667  script ws5.txt
   668  history > cmds.log
+  669  ls -l
+  670  cd /mnt/scratch/CS131_billa/FA26/DangHieuson/cs131
+  671  git status
+  672  git add WS5/gettweetbydate.sh WS5/latesttweets.sh WS5/ws5.txt WS5/cmds.log
+  673  git commit -m "WS5"
+  674  git push
+  675  nano cmds.log
+  676  cd /mnt/scratch/CS131_billa/FA26/DangHieuson/cs131/WS5
+  677  history > cmds.log
